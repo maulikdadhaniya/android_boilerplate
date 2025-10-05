@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Android_boilerplate" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Make system bars transparent -->
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!-- Set light mode system bar appearance -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="27">true</item>
+        <!-- Enable edge-to-edge -->
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges</item>
+        <!-- Default background color -->
+        <item name="android:windowBackground">@color/window_background_light</item>
+        <!-- Default surface colors -->
+        <item name="colorSurface">@color/surface_light</item>
+        <item name="colorSurfaceVariant">@color/surface_variant_light</item>
+    </style>
+
+    <style name="Theme.Android_boilerplate" parent="Base.Theme.Android_boilerplate" />
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/wordSearchFragment">
+
+    <fragment
+        android:id="@+id/wordSearchFragment"
+        android:name="com.maulik.android_boilerplate.presentation.ui.WordSearchFragment"
+        android:label="Word Search">
+        <action
+            android:id="@+id/action_wordSearchFragment_to_wordDetailFragment"
+            app:destination="@id/wordDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/wordDetailFragment"
+        android:name="com.maulik.android_boilerplate.presentation.ui.WordDetailFragment"
+        android:label="Word Detail">
+        <argument
+            android:name="wordDefinition"
+            app:argType="com.maulik.android_boilerplate.data.model.DictionaryResponse" />
+    </fragment>
+
+</navigation>

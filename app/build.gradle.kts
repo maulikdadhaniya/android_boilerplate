@@ -21,6 +21,20 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions += "environment"
+    productFlavors {
+        create("prod") {
+            dimension = "environment"
+            buildConfigField("Boolean", "IS_MOCK", "false")
+        }
+        create("mock") {
+            dimension = "environment"
+            buildConfigField("Boolean", "IS_MOCK", "true")
+            applicationIdSuffix = ".mock"
+            versionNameSuffix = "-mock"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -39,6 +53,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -79,6 +94,9 @@ dependencies {
     // Moshi
     implementation(libs.moshi.kotlin)
     implementation(libs.moshi.adapters)
+
+    // Timber
+    implementation(libs.timber)
 
     // Testing
     testImplementation(libs.junit)

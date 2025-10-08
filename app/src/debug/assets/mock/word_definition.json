@@ -1,0 +1,66 @@
+[
+  {
+    "word": "example",
+    "phonetic": "/ɪɡˈzɑːmp(ə)l/",
+    "phonetics": [
+      {
+        "text": "/ɪɡˈzɑːmp(ə)l/",
+        "audio": "https://api.dictionaryapi.dev/media/pronunciations/en/example-uk.mp3",
+        "sourceUrl": "https://commons.wikimedia.org/w/index.php?curid=9021983",
+        "license": {
+          "name": "BY 3.0 US",
+          "url": "https://creativecommons.org/licenses/by/3.0/us"
+        }
+      }
+    ],
+    "meanings": [
+      {
+        "partOfSpeech": "noun",
+        "definitions": [
+          {
+            "definition": "Something that is representative of all such things in a group.",
+            "synonyms": [],
+            "antonyms": [],
+            "example": "This painting is a good example of modern art."
+          },
+          {
+            "definition": "Something that serves to illustrate or explain a rule.",
+            "synonyms": [],
+            "antonyms": [],
+            "example": "The teacher gave us an example of how to solve the problem."
+          }
+        ],
+        "synonyms": [
+          "case",
+          "instance",
+          "sample"
+        ],
+        "antonyms": []
+      },
+      {
+        "partOfSpeech": "verb",
+        "definitions": [
+          {
+            "definition": "To be illustrated or exemplified (by).",
+            "synonyms": [],
+            "antonyms": [],
+            "example": null
+          }
+        ],
+        "synonyms": [
+          "exemplify",
+          "illustrate"
+        ],
+        "antonyms": []
+      }
+    ],
+    "license": {
+      "name": "CC BY-SA 3.0",
+      "url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "sourceUrls": [
+      "https://en.wiktionary.org/wiki/example"
+    ]
+  }
+]
+
